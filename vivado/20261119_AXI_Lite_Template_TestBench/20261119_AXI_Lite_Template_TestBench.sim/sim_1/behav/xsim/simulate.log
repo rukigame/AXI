@@ -1,0 +1,11 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+[               75000] WRITE AWADDR = 0x0, WDATA = 0xdeadbeef
+[              115000] WRITE AWADDR = 0x4, WDATA = 0xcafebabe
+[              155000] WRITE AWADDR = 0x8, WDATA = 0x12345678
+[              195000] WRITE AWADDR = 0xc, WDATA = 0xaaaabbbb
+[              265000] READ ARADDR = 0x0, RDATA = 0xdeadbeef
+[              315000] READ ARADDR = 0x4, RDATA = 0xcafebabe
+[              365000] READ ARADDR = 0x8, RDATA = 0x12345678
+[              415000] READ ARADDR = 0xc, RDATA = 0xaaaabbbb
+$finish called at time : 435 ns : File "D:/AXI/vivado/20261119_AXI_Lite_Template_TestBench/20261119_AXI_Lite_Template_TestBench.srcs/sim_1/new/tb_AXI_Lite_Slave.sv" Line 123

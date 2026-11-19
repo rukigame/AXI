@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/AXI/vivado/20261119_AXI_Lite_Template_TestBench/20261119_AXI_Lite_Template_TestBench.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+D:/AXI/vivado/20261119_AXI_Lite_Template_TestBench/20261119_AXI_Lite_Template_TestBench.srcs/sim_1/new/tb_AXI_Lite_Slave.sv,1795073992,systemVerilog,,,,tb_AXI_Lite_Slave,,uvm,,,,,,
+D:/AXI/vivado/20261119_AXI_Lite_Template_TestBench/20261119_AXI_Lite_Template_TestBench.srcs/sources_1/imports/hdl/myip_v1_0.v,1795063005,verilog,,D:/AXI/vivado/20261119_AXI_Lite_Template_TestBench/20261119_AXI_Lite_Template_TestBench.srcs/sources_1/imports/hdl/myip_v1_0_S00_AXI.v,,myip_v1_0,,uvm,,,,,,
+D:/AXI/vivado/20261119_AXI_Lite_Template_TestBench/20261119_AXI_Lite_Template_TestBench.srcs/sources_1/imports/hdl/myip_v1_0_S00_AXI.v,1795063005,verilog,,,,myip_v1_0_S00_AXI,,uvm,,,,,,

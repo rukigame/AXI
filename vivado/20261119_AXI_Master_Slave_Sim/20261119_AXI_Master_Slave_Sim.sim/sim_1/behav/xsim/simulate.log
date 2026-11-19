@@ -1,0 +1,11 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+[95000] AXI WRITE AWADDR = xxxxxxxx, WDATA = 11111111
+[155000] AXI WRITE AWADDR = xxxxxxxx, WDATA = 22222222
+[215000] AXI WRITE AWADDR = xxxxxxxx, WDATA = 33333333
+[275000] AXI WRITE AWADDR = xxxxxxxx, WDATA = 44444444
+[335000] AXI READ ARADDR = 0, RDATA = xxxxxxxx
+[385000] AXI READ ARADDR = 4, RDATA = xxxxxxxx
+[435000] AXI READ ARADDR = 8, RDATA = xxxxxxxx
+[485000] AXI READ ARADDR = c, RDATA = xxxxxxxx
+$finish called at time : 585 ns : File "D:/AXI/vivado/20261119_AXI_Master_Slave_Sim/20261119_AXI_Master_Slave_Sim.srcs/sim_1/new/tb_axi_master_slave.sv" Line 84
