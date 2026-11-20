@@ -1,0 +1,6 @@
+/*gpio_design_1_wrapper*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

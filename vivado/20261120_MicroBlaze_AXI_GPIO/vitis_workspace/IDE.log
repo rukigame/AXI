@@ -1,0 +1,169 @@
+13:46:20 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\AXI\vivado\20261120_MicroBlaze_AXI_GPIO\vitis_workspace\temp_xsdb_launch_script.tcl
+13:46:20 INFO  : Registering command handlers for Vitis TCF services
+13:46:23 INFO  : XSCT server has started successfully.
+13:46:24 INFO  : Platform repository initialization has completed.
+13:46:27 INFO  : Successfully done setting XSCT server connection channel  
+13:46:27 INFO  : plnx-install-location is set to ''
+13:46:27 INFO  : Successfully done query RDI_DATADIR 
+13:46:27 INFO  : Successfully done setting workspace for the tool. 
+13:51:36 INFO  : Result from executing command 'getProjects': gpio_design_1_wrapper
+13:51:36 INFO  : Result from executing command 'getPlatforms': 
+13:51:36 WARN  : An unexpected exception occurred in the module 'platform project logging'
+13:51:36 INFO  : Platform 'gpio_design_1_wrapper' is added to custom repositories.
+13:51:38 INFO  : Platform 'gpio_design_1_wrapper' is added to custom repositories.
+14:03:31 INFO  : Result from executing command 'getProjects': gpio_design_1_wrapper
+14:03:31 INFO  : Result from executing command 'getPlatforms': gpio_design_1_wrapper|D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/gpio_design_1_wrapper/export/gpio_design_1_wrapper/gpio_design_1_wrapper.xpfm
+14:03:31 INFO  : Checking for BSP changes to sync application flags for project 'helloWorld'...
+14:10:38 INFO  : Checking for BSP changes to sync application flags for project 'helloWorld'...
+14:11:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:11:11 INFO  : Jtag cable 'Digilent Basys3 210183BB7A1BA' is selected.
+14:11:11 INFO  : 'jtag frequency' command is executed.
+14:11:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7A1BA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7A1BA-0362d093-0"}' command is executed.
+14:11:11 INFO  : Device configured successfully with "D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/_ide/bitstream/gpio_design_1_wrapper.bit"
+14:11:11 INFO  : Context for processor 'microblaze_0' is selected.
+14:11:11 INFO  : Hardware design and registers information is loaded from 'D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/gpio_design_1_wrapper/export/gpio_design_1_wrapper/hw/gpio_design_1_wrapper.xsa'.
+14:11:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:11:11 INFO  : Context for processor 'microblaze_0' is selected.
+14:11:11 INFO  : System reset is completed.
+14:11:14 INFO  : 'after 3000' command is executed.
+14:11:15 INFO  : Context for processor 'microblaze_0' is selected.
+14:11:15 INFO  : The application 'D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/Debug/helloWorld.elf' is downloaded to processor 'microblaze_0'.
+14:11:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7A1BA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7A1BA-0362d093-0"}
+fpga -file D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/_ide/bitstream/gpio_design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/gpio_design_1_wrapper/export/gpio_design_1_wrapper/hw/gpio_design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/Debug/helloWorld.elf
+----------------End of Script----------------
+
+14:11:15 INFO  : Context for processor 'microblaze_0' is selected.
+14:11:15 INFO  : 'con' command is executed.
+14:11:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:11:15 INFO  : Launch script is exported to file 'D:\AXI\vivado\20261120_MicroBlaze_AXI_GPIO\vitis_workspace\helloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
+14:23:28 INFO  : Checking for BSP changes to sync application flags for project 'helloWorld'...
+14:23:42 INFO  : Disconnected from the channel tcfchan#2.
+14:23:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:23:43 INFO  : Jtag cable 'Digilent Basys3 210183BB7A1BA' is selected.
+14:23:43 INFO  : 'jtag frequency' command is executed.
+14:23:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7A1BA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7A1BA-0362d093-0"}' command is executed.
+14:23:44 INFO  : Device configured successfully with "D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/_ide/bitstream/gpio_design_1_wrapper.bit"
+14:23:44 INFO  : Context for processor 'microblaze_0' is selected.
+14:23:44 INFO  : Hardware design and registers information is loaded from 'D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/gpio_design_1_wrapper/export/gpio_design_1_wrapper/hw/gpio_design_1_wrapper.xsa'.
+14:23:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:23:44 INFO  : Context for processor 'microblaze_0' is selected.
+14:23:44 INFO  : System reset is completed.
+14:23:47 INFO  : 'after 3000' command is executed.
+14:23:47 INFO  : Context for processor 'microblaze_0' is selected.
+14:23:47 INFO  : The application 'D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/Debug/helloWorld.elf' is downloaded to processor 'microblaze_0'.
+14:23:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7A1BA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7A1BA-0362d093-0"}
+fpga -file D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/_ide/bitstream/gpio_design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/gpio_design_1_wrapper/export/gpio_design_1_wrapper/hw/gpio_design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/Debug/helloWorld.elf
+----------------End of Script----------------
+
+14:23:47 INFO  : Context for processor 'microblaze_0' is selected.
+14:23:47 INFO  : 'con' command is executed.
+14:23:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:23:47 INFO  : Launch script is exported to file 'D:\AXI\vivado\20261120_MicroBlaze_AXI_GPIO\vitis_workspace\helloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
+14:40:05 INFO  : Checking for BSP changes to sync application flags for project 'helloWorld'...
+14:40:12 INFO  : Disconnected from the channel tcfchan#3.
+14:40:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:40:13 INFO  : Jtag cable 'Digilent Basys3 210183BB7A1BA' is selected.
+14:40:13 INFO  : 'jtag frequency' command is executed.
+14:40:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7A1BA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7A1BA-0362d093-0"}' command is executed.
+14:40:14 INFO  : Device configured successfully with "D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/_ide/bitstream/gpio_design_1_wrapper.bit"
+14:40:14 INFO  : Context for processor 'microblaze_0' is selected.
+14:40:14 INFO  : Hardware design and registers information is loaded from 'D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/gpio_design_1_wrapper/export/gpio_design_1_wrapper/hw/gpio_design_1_wrapper.xsa'.
+14:40:14 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:40:14 INFO  : Context for processor 'microblaze_0' is selected.
+14:40:14 INFO  : System reset is completed.
+14:40:17 INFO  : 'after 3000' command is executed.
+14:40:17 INFO  : Context for processor 'microblaze_0' is selected.
+14:40:17 INFO  : The application 'D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/Debug/helloWorld.elf' is downloaded to processor 'microblaze_0'.
+14:40:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7A1BA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7A1BA-0362d093-0"}
+fpga -file D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/_ide/bitstream/gpio_design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/gpio_design_1_wrapper/export/gpio_design_1_wrapper/hw/gpio_design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/Debug/helloWorld.elf
+----------------End of Script----------------
+
+14:40:17 INFO  : Context for processor 'microblaze_0' is selected.
+14:40:17 INFO  : 'con' command is executed.
+14:40:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:40:17 INFO  : Launch script is exported to file 'D:\AXI\vivado\20261120_MicroBlaze_AXI_GPIO\vitis_workspace\helloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
+14:42:00 INFO  : Checking for BSP changes to sync application flags for project 'helloWorld'...
+14:42:06 INFO  : Disconnected from the channel tcfchan#4.
+14:42:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:42:07 INFO  : Jtag cable 'Digilent Basys3 210183BB7A1BA' is selected.
+14:42:07 INFO  : 'jtag frequency' command is executed.
+14:42:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7A1BA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7A1BA-0362d093-0"}' command is executed.
+14:42:08 INFO  : Device configured successfully with "D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/_ide/bitstream/gpio_design_1_wrapper.bit"
+14:42:08 INFO  : Context for processor 'microblaze_0' is selected.
+14:42:08 INFO  : Hardware design and registers information is loaded from 'D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/gpio_design_1_wrapper/export/gpio_design_1_wrapper/hw/gpio_design_1_wrapper.xsa'.
+14:42:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+14:42:08 INFO  : Context for processor 'microblaze_0' is selected.
+14:42:08 INFO  : System reset is completed.
+14:42:11 INFO  : 'after 3000' command is executed.
+14:42:11 INFO  : Context for processor 'microblaze_0' is selected.
+14:42:11 INFO  : The application 'D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/Debug/helloWorld.elf' is downloaded to processor 'microblaze_0'.
+14:42:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Basys3 210183BB7A1BA" && level==0 && jtag_device_ctx=="jsn-Basys3-210183BB7A1BA-0362d093-0"}
+fpga -file D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/_ide/bitstream/gpio_design_1_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/gpio_design_1_wrapper/export/gpio_design_1_wrapper/hw/gpio_design_1_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace/helloWorld/Debug/helloWorld.elf
+----------------End of Script----------------
+
+14:42:11 INFO  : Context for processor 'microblaze_0' is selected.
+14:42:11 INFO  : 'con' command is executed.
+14:42:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+14:42:11 INFO  : Launch script is exported to file 'D:\AXI\vivado\20261120_MicroBlaze_AXI_GPIO\vitis_workspace\helloWorld_system\_ide\scripts\debugger_helloworld-default.tcl'
+15:04:44 INFO  : Checking for BSP changes to sync application flags for project 'helloWorld'...
+15:07:36 INFO  : Checking for BSP changes to sync application flags for project 'helloWorld'...
+15:11:23 INFO  : Checking for BSP changes to sync application flags for project 'helloWorld'...
+15:13:29 INFO  : Checking for BSP changes to sync application flags for project 'helloWorld'...
+15:13:58 INFO  : Checking for BSP changes to sync application flags for project 'helloWorld'...
+17:37:28 INFO  : Disconnected from the channel tcfchan#5.

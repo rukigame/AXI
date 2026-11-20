@@ -1,0 +1,20 @@
+Nothing to build in platform 'gpio_design_1_wrapper_16led_4button'
+
+17:33:19 **** Incremental Build of configuration Debug for project led_button ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -ID:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace2/gpio_design_1_wrapper_16led_4button/export/gpio_design_1_wrapper_16led_4button/sw/gpio_design_1_wrapper_16led_4button/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: led_button.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace2/gpio_design_1_wrapper_16led_4button/export/gpio_design_1_wrapper_16led_4button/sw/gpio_design_1_wrapper_16led_4button/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "led_button.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: led_button.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size led_button.elf  |tee "led_button.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2452	    268	   3112	   5832	   16c8	led_button.elf
+'Finished building: led_button.elf.size'
+' '

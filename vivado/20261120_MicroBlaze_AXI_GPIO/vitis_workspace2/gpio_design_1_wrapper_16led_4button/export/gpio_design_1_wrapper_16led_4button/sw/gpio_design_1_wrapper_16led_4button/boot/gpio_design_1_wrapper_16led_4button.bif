@@ -1,0 +1,6 @@
+/*gpio_design_1_wrapper_16led_4button*/
+the_ROM_image:
+{
+   <bitstream> 
+   <elf> 
+}

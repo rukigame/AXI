@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="led_button" location="D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace2/led_button" platform="D:/AXI/vivado/20261120_MicroBlaze_AXI_GPIO/vitis_workspace2/gpio_design_1_wrapper_16led_4button/export/gpio_design_1_wrapper_16led_4button/gpio_design_1_wrapper_16led_4button.xpfm" platformUID="xilinx:basys3::0.0(custom)" systemProject="led_button_system" sysConfig="gpio_design_1_wrapper_16led_4button" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="3b0413e748c3e736cd47d15793cffc13">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.2126775863">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.2137809424" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
